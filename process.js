@@ -5,7 +5,7 @@ const defaultDir = __dirname + '/bin';
 const bin = './ngrok' + (platform === 'win32' ? '.exe' : '');
 const ready = /starting web service.*addr=(\d+\.\d+\.\d+\.\d+:\d+)/;
 const inUse = /address already in use/;
-
+console.log("NGROK BASE DIRECTORY", __dirname)
 let processPromise, activeProcess;
 
 /*
